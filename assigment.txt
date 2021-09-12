@@ -1,0 +1,24 @@
+void main() {
+
+  var studentName = "Hammad Jawed";
+  int mathMarks = 71;
+  int englishMarks = 66;
+  int urduMarks = 62;
+  int physicsMarks = 70;
+  int marksObtained = (mathMarks + englishMarks + urduMarks + physicsMarks);
+  int totalmarks = 400;
+  double percentage = (marksObtained * 100) / totalmarks;
+  
+  
+  print("=========   YOU MARKSHEET   =======");
+  print("");
+  print('Student Name:  ${studentName}');
+  print('Math marks:  ${mathMarks}/100');
+  print('English marks:  ${englishMarks}/100');
+  print('Urdu marks:  ${urduMarks}/100');
+  print('Physics marks:  ${physicsMarks}/100');
+  print('Total marks:  ${marksObtained}/${totalmarks}');
+  print('percentage:  ${percentage}%');
+  print("");
+  print(percentage < 60 ? "========== You are Failed ===========" : "======== congrats you are passed ==========");
+}
